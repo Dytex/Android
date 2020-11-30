@@ -110,9 +110,10 @@ public class MainActivity extends AppCompatActivity {
         queue.add(stringRequest);
     };
 
-
-
-
+    public void goToActivityExtend(View view) {
+        Intent intent = new Intent(view.getContext(), Activity.class);
+        view.getContext().startActivity(intent);
+    }
 
 
 }
